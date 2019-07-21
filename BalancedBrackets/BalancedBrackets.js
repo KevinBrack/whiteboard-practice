@@ -29,9 +29,11 @@ function balancedBrackets(str) {
 }
 
 // some console log tests
-console.log("{}[]()", balancedBrackets("{}[]()")); // should print true
-console.log("{(([]))}", balancedBrackets("{(([]))}")); // should print true
-console.log("{ [ ] ( ) }", balancedBrackets("{ [ ] ( ) }")); // should print true
-console.log("{ [ ( ] ) }", balancedBrackets("{ [ ( ] ) }")); // should print true
-console.log("(", balancedBrackets("(")); // should print true
-console.log("{[}", balancedBrackets("{[}")); // should print true
+// console.log("{}[]()", balancedBrackets("{}[]()")); // should print true
+// console.log("{(([]))}", balancedBrackets("{(([]))}")); // should print true
+// console.log("{ [ ] ( ) }", balancedBrackets("{ [ ] ( ) }")); // should print true
+// console.log("{ [ ( ] ) }", balancedBrackets("{ [ ( ] ) }")); // should print true
+// console.log("(", balancedBrackets("(")); // should print true
+// console.log("{[}", balancedBrackets("{[}")); // should print true
+
+module.exports = balancedBrackets;
