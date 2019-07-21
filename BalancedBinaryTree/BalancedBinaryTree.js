@@ -34,11 +34,13 @@ class BinaryTreeNode {
   }
 }
 
-const root = new BinaryTreeNode(5);
-console.log(checkBalanced(root)); // should return true
+// const root = new BinaryTreeNode(5);
+// console.log(checkBalanced(root)); // should return true
 
-root.insertLeft(10);
-console.log(checkBalanced(root)); //should return false
+// root.insertLeft(10);
+// console.log(checkBalanced(root)); //should return false
 
-root.insertRight(11);
-console.log(checkBalanced(root)); // should return false
+// root.insertRight(11);
+// console.log(checkBalanced(root)); // should return false
+
+module.exports = { checkBalanced, BinaryTreeNode };
