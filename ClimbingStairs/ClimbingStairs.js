@@ -29,9 +29,9 @@ const callMemo = n => memoizeClimbStairs(n, Array(n));
 
 // some console log tests
 // console.log(naiveClimbingStairs(10)); // should print 274
-// console.log(naiveClimbingStairs(30)); // should print 35798080
+// console.log(naiveClimbingStairs(30)); // should print 53798080
 
-// console.log(callMemo(30)); // should print 35798080
+// console.log(callMemo(30)); // should print 53798080
 // console.log(callMemo(50)); // should print 10562230626642
 
 module.exports = { callMemo, naiveClimbingStairs };
