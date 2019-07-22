@@ -2,11 +2,11 @@
 function recursiveDepthFirstForEach(node, cb) {
   cb(node.value);
 
-  if(node.left) {
+  if (node.left) {
     recursiveDepthFirstForEach(node.left, cb);
   }
 
-  if(node.right) {
+  if (node.right) {
     recursiveDepthFirstForEach(node.right, cb);
   }
 }
@@ -16,10 +16,10 @@ function iterativeDepthFirstForEach(node, cb) {
   const stack = [];
   stack.push(node);
 
-  while(stack.length > 0) {
+  while (stack.length > 0) {
     const current = stack.pop();
 
-    if(current.right) {
+    if (current.right) {
       stack.push(current.right);
     }
 
@@ -32,7 +32,7 @@ function iterativeDepthFirstForEach(node, cb) {
 }
 
 class BinaryTreeNode {
-  constructor(value){
+  constructor(value) {
     this.value = value;
     this.left = null;
     this.right = null;
@@ -48,23 +48,29 @@ class BinaryTreeNode {
 }
 
 // Some console log tests
-const root = new BinaryTreeNode(6);
-root.insertLeft(10);
-root.insertRight(18);
-root.left.insertLeft(9);
-root.right.insertRight(89);
+// const root = new BinaryTreeNode(6);
+// root.insertLeft(10);
+// root.insertRight(18);
+// root.left.insertLeft(9);
+// root.right.insertRight(89);
 
-const cb = x => console.log(x);
+// const cb = x => console.log(x);
 
-recursiveDepthFirstForEach(root, cb);
-console.log();
-iterativeDepthFirstForEach(root, cb);
-console.log();
+// recursiveDepthFirstForEach(root, cb);
+// console.log();
+// iterativeDepthFirstForEach(root, cb);
+// console.log();
 
-root.left.insertRight(15);
-root.right.insertLeft(0);
+// root.left.insertRight(15);
+// root.right.insertLeft(0);
 
-recursiveDepthFirstForEach(root, cb);
-console.log();
-iterativeDepthFirstForEach(root, cb);
-console.log();
+// recursiveDepthFirstForEach(root, cb);
+// console.log();
+// iterativeDepthFirstForEach(root, cb);
+// console.log();
+
+module.exports = {
+  recursiveDepthFirstForEach,
+  iterativeDepthFirstForEach,
+  BinaryTreeNode
+};
