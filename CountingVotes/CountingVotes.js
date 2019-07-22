@@ -19,34 +19,36 @@ function countVotes(arr) {
   return winner;
 }
 
-// console log tests
-console.log(
-  countVotes([
-    "veronica",
-    "mary",
-    "alex",
-    "james",
-    "mary",
-    "michael",
-    "alex",
-    "michael"
-  ])
-); // should print 'michael'
+// // console log tests
+// console.log(
+//   countVotes([
+//     "veronica",
+//     "mary",
+//     "alex",
+//     "james",
+//     "mary",
+//     "michael",
+//     "alex",
+//     "michael"
+//   ])
+// ); // should print 'michael'
 
-console.log(
-  countVotes([
-    "john",
-    "johnny",
-    "jackie",
-    "johnny",
-    "john",
-    "jackie",
-    "jamie",
-    "jamie",
-    "john",
-    "johnny",
-    "jamie",
-    "johnny",
-    "john"
-  ])
-); // should print 'johnny'
+// console.log(
+//   countVotes([
+//     "john",
+//     "johnny",
+//     "jackie",
+//     "johnny",
+//     "john",
+//     "jackie",
+//     "jamie",
+//     "jamie",
+//     "john",
+//     "johnny",
+//     "jamie",
+//     "johnny",
+//     "john"
+//   ])
+// ); // should print 'johnny'
+
+module.exports = { countVotes };
